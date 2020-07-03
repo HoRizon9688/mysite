@@ -25,4 +25,5 @@ urlpatterns = [
     path('login/', views.login),
     path('set_cookie/', views.set_cookie),
     path('get_cookie/', views.get_cookie),
+    path('index/', views.open_index),
 ]

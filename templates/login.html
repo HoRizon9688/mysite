@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>登录界面</title>
 </head>
-<body>
+<body class="css_login">
     <form action="/login/" method="post">
     {% csrf_token %}
     用户名<input type="text" name="user_name" maxlength="10">
         密码<input type="password" name="user_password" minlength="8">
     <input type="submit" value="提交">
     </form>
+<img src="{% static "/images/12.png" %}" alt="Tosaka Rin" width="40%" >
 </body>
 </html>

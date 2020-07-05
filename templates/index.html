@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
     <title>首页</title>
 </head>
-<body>
+<body class="css_index">
+<h1>NIE!</h1>
 <p>登陆成功！</p>
 <p>你的帐户名为{{ request.session.username }}</p>
 <a href="/logout/">注销</a>
